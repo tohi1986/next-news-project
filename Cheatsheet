@@ -1,0 +1,30 @@
+dobijes zadatak/kreces radit
+napravis branch 
+napravis sto trebas/odradis posao
+git add as
+commitas
+pushas
+senior approva merga u main
+ti povuces novi mergani main
+i radis novi branch za novi zadatak
+
+
+feat:       nova funkcionalnost
+fix:        popravak buga
+refactor:   promjena koda bez dodavanja funkcionalnosti
+style:      promjene izgleda / formatiranje / CSS
+chore:      održavanje projekta, config, dependency update
+docs:       dokumentacija
+test:       dodavanje ili izmjena testova
+perf:       poboljšanje performansi
+build:      build sustav, konfiguracije, npm
+ci:         CI/CD promjene (GitHub Actions itd.)
+revert:     vraćanje prethodnog commita
+
+
+
+
+layout.tsx = okvir aplikacije
+page.tsx   = sadržaj stranice
+component  = dio stranice koji ponavljaš
+Tailwind   = kako sve izgleda
