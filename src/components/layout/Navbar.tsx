@@ -20,6 +20,13 @@ export default function Navbar() {
         <Link href="/about">
           About
         </Link>
+
+        <span className="text-amber-400">|</span>
+
+        <Link href="/extras">
+        Extras
+        </Link>
+        
       </div>
     </nav>
   );

@@ -1,5 +1,14 @@
 import Image from "next/image";
 import { getArticleById } from "@/lib/news";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Next News | Articles",
+  description: "Latest articles from around the world.",
+};
+
+
+
 
 type PageProps = {
   params: Promise<{
