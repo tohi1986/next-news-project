@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 export default function ExtrasLayout({
   children,
   trending,
@@ -10,14 +12,17 @@ export default function ExtrasLayout({
   return (
     <main>
       {children}
-    
-      <div>
+
+      <Suspense fallback={<div>Loading trending...</div>}>
         {trending}
-      </div>
-        <hr className="my-8 border-t-2 border-amber-500" />
-      <div>
+      </Suspense>
+
+      <hr className="my-8 border-t-2 border-amber-500" />
+
+      <Suspense fallback={<div>Loading archive...</div>}>
         {archive}
-      </div>
+      </Suspense>
+
     </main>
   );
 }
