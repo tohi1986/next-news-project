@@ -28,3 +28,18 @@ layout.tsx = okvir aplikacije
 page.tsx   = sadržaj stranice
 component  = dio stranice koji ponavljaš
 Tailwind   = kako sve izgleda
+
+
+
+app/
+├── (auth)/
+│   ├── login
+│   └── register
+│
+├── (dashboard)/
+│   ├── profile
+│   └── settings
+│
+├── (marketing)/
+│   ├── about
+│   └── pricing
