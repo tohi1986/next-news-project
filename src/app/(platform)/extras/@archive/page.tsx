@@ -1,7 +1,10 @@
 import NewsCard from "@/components/news/NewsCard";
 import { getArchiveNews } from "@/lib/news";
 
+
 export default async function Archive() {
+  
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   const data = await getArchiveNews();
 
   return (
@@ -12,10 +15,10 @@ export default async function Archive() {
 
       <div className="flex flex-col gap-10 bg-amber-600 text-black">
         {data.articles.map((article) => (
-          <NewsCard 
+          <NewsCard
             key={article.id}
-            article={article} 
-            index={0}          />
+            article={article}
+          />
         ))}
       </div>
     </section>

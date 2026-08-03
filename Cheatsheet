@@ -1,3 +1,8 @@
+NIKAKO NE ZABORAVI OSNOVNO DAKLE: 
+UVIJEK SE SJETI U NOVOJ KOMPONENTI KRENUTI;
+MOBILE FIRST SCREEN
+
+
 dobijes zadatak/kreces radit
 napravis branch 
 napravis sto trebas/odradis posao
@@ -32,7 +37,31 @@ Tailwind   = kako sve izgleda
 
 
 
-my-project/
+
+    │       ├── Navbar.tsx
+    │       ├── Sidebar.tsx
+    │       └── Footer.tsx
+    │
+    │
+    ├── server/
+    │   ├── db.ts
+    │   ├── auth.ts
+    │   └── permissions.ts
+    │
+    │
+    ├── lib/
+    │   ├── utils.ts
+    │   ├── constants.ts
+    │   └── validations.ts
+    │
+    │
+    ├── hooks/
+    │   ├── use-debounce.ts
+    │   └── use-media-query.ts
+    │
+    │
+    └── types/
+        └── index.tsmy-project/
 │
 ├── .env.local
 ├── .env.example
@@ -114,27 +143,3 @@ my-project/
     │   │   └── modal.tsx
     │   │
     │   └── shared/
-    │       ├── Navbar.tsx
-    │       ├── Sidebar.tsx
-    │       └── Footer.tsx
-    │
-    │
-    ├── server/
-    │   ├── db.ts
-    │   ├── auth.ts
-    │   └── permissions.ts
-    │
-    │
-    ├── lib/
-    │   ├── utils.ts
-    │   ├── constants.ts
-    │   └── validations.ts
-    │
-    │
-    ├── hooks/
-    │   ├── use-debounce.ts
-    │   └── use-media-query.ts
-    │
-    │
-    └── types/
-        └── index.ts

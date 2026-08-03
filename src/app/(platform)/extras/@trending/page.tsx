@@ -2,6 +2,7 @@ import NewsCard from "@/components/news/NewsCard";
 import { getTrendingNews } from "@/lib/news";
 
 export default async function Trending() {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   const data = await getTrendingNews();
 
   return (
