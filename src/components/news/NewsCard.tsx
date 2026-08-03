@@ -3,12 +3,11 @@ import type { Article } from "@/types/article";
 
 type NewsCardProps = {
   article: Article;
-  index: number;
 };
 
-export default function NewsCard({ article, index }: NewsCardProps) {
+export default function NewsCard({ article }: NewsCardProps) {
   return (
-    <Link href={`/news/${index}`}>
+    <Link href={`/news/${encodeURIComponent(article.url)}`}>
       <article className="border-4 rounded-lg p-4">
         <img
           src={article.image}

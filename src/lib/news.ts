@@ -22,7 +22,11 @@ export async function getNews(): Promise<NewsResponse> {
 export async function getArticleById(id: string): Promise<Article> {
   const data = await getNews();
 
-  return data.articles[Number(id)];
+  const url = decodeURIComponent(id);
+
+  return data.articles.find(
+    (article) => article.url === url
+  ) as Article;
 }
 
 
