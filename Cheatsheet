@@ -31,15 +31,110 @@ Tailwind   = kako sve izgleda
 
 
 
-app/
-├── (auth)/
-│   ├── login
-│   └── register
+
+my-project/
 │
-├── (dashboard)/
-│   ├── profile
-│   └── settings
+├── .env.local
+├── .env.example
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+├── tailwind.config.ts
+├── components.json          # ako koristiš shadcn/ui
 │
-├── (marketing)/
-│   ├── about
-│   └── pricing
+├── prisma/                  # ili drizzle/
+│   ├── schema.prisma
+│   └── migrations/
+│
+├── public/
+│   ├── images/
+│   └── icons/
+│
+└── src/
+    │
+    ├── app/
+    │   │
+    │   ├── (auth)/
+    │   │   ├── login/
+    │   │   │   └── page.tsx
+    │   │   └── register/
+    │   │       └── page.tsx
+    │   │
+    │   ├── (dashboard)/
+    │   │   ├── layout.tsx
+    │   │   ├── page.tsx
+    │   │   └── projects/
+    │   │       ├── page.tsx
+    │   │       └── [id]/
+    │   │           └── page.tsx
+    │   │
+    │   ├── api/
+    │   │   └── webhooks/
+    │   │       └── stripe/
+    │   │           └── route.ts
+    │   │
+    │   ├── layout.tsx
+    │   ├── page.tsx
+    │   ├── loading.tsx
+    │   └── error.tsx
+    │
+    │
+    ├── features/
+    │   │
+    │   ├── auth/
+    │   │   ├── actions.ts
+    │   │   ├── queries.ts
+    │   │   ├── schema.ts
+    │   │   ├── types.ts
+    │   │   └── components/
+    │   │       ├── LoginForm.tsx
+    │   │       └── RegisterForm.tsx
+    │   │
+    │   │
+    │   ├── projects/
+    │   │   ├── actions.ts
+    │   │   ├── queries.ts
+    │   │   ├── schema.ts
+    │   │   ├── types.ts
+    │   │   └── components/
+    │   │       ├── ProjectCard.tsx
+    │   │       └── ProjectForm.tsx
+    │   │
+    │   │
+    │   └── billing/
+    │       ├── actions.ts
+    │       └── stripe.ts
+    │
+    │
+    ├── components/
+    │   │
+    │   ├── ui/
+    │   │   ├── button.tsx
+    │   │   ├── input.tsx
+    │   │   └── modal.tsx
+    │   │
+    │   └── shared/
+    │       ├── Navbar.tsx
+    │       ├── Sidebar.tsx
+    │       └── Footer.tsx
+    │
+    │
+    ├── server/
+    │   ├── db.ts
+    │   ├── auth.ts
+    │   └── permissions.ts
+    │
+    │
+    ├── lib/
+    │   ├── utils.ts
+    │   ├── constants.ts
+    │   └── validations.ts
+    │
+    │
+    ├── hooks/
+    │   ├── use-debounce.ts
+    │   └── use-media-query.ts
+    │
+    │
+    └── types/
+        └── index.ts
